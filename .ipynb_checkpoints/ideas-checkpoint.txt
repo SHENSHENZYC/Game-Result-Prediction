@@ -1,0 +1,18 @@
+Design a pre-game, beginning-of-the-game, mid-game and after-game
+
+model: decision tree (random forest, XGBoost), logistic regression, SVR
+
+pre-game: after ban-pick phase, predict game result by champions banned and picked, 
+plus their summoner spells. 
+
+beginning of the game: with ban-pick information, and first blood, first tower, 
+first rift herald, and first dragon, predict game result. 
+
+mid-game: everything previously mentioned plus first baron, first inhibitor, 
+tower kills / 2, dragon kills / 2, and reft herald kills. 
+
+optional: after-game, more for game recap purpose
+include all the information to aim to predict a model with high accuracy. 
+
+Create an automated predictor where user could input associated game info and prediction
+result will be outputed. 
