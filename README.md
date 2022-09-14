@@ -81,7 +81,7 @@ Feel free to check out `t.csv` under `data` folder as an example template for an
 columns and column names should be included to successfully run the program. If the input csv file does not include all 
 columns corresponding to the executed model, an error message will be printed and the program will be terminated. 
 
-Alternatively, predictor_input.py is always available that guides the user to input desired information of the game and provides
+Alternatively, predictor_input.py is always available that guides the user through console to input desired information of the game and provides
 predictions for that particular game.
 
 This project uses Python to implement the user interaction program and jupyter notebook to train classification models. 
