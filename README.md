@@ -33,13 +33,51 @@ Please note that there are required columns for the model at each stage. The lis
 
 ### pre-game model:
 
-'t1_champ1id', 
+t1_champ1id, t1_champ1_sum1, t1_champ1_sum2, t1_champ2id, t1_champ2_sum1, t1_champ2_sum2, t1_champ3id, t1_champ3_sum1, 
+t1_champ3_sum2, t1_champ4id, t1_champ4_sum1, t1_champ4_sum2, t1_champ5id, t1_champ5_sum1, t1_champ5_sum2, 
+t1_ban1, t1_ban2, t1_ban3, t1_ban4, t1_ban5, 
+t2_champ1id, t2_champ1_sum1, t2_champ1_sum2, t2_champ2id, t2_champ2_sum1, t2_champ2_sum2, t2_champ3id, t2_champ3_sum1, 
+t2_champ3_sum2, t2_champ4id, t2_champ4_sum1, t2_champ4_sum2, t2_champ5id, t2_champ5_sum1, t2_champ5_sum2,
+t2_ban1, t2_ban2, t2_ban3, t2_ban4, t2_ban5
 
-'t1_champ1_sum1', 
+### early-game model:
 
-'t1_champ1_sum2', 't1_champ2id', 't1_champ2_sum1', 't1_champ2_sum2', 't1_champ3id', 't1_champ3_sum1', 
-'t1_champ3_sum2', 't1_champ4id', 't1_champ4_sum1', 't1_champ4_sum2', 't1_champ5id', 't1_champ5_sum1', 't1_champ5_sum2', 
-'t1_ban1', 't1_ban2', 't1_ban3', 't1_ban4', 't1_ban5', 
-'t2_champ1id', 't2_champ1_sum1', 't2_champ1_sum2', 't2_champ2id', 't2_champ2_sum1', 't2_champ2_sum2', 't2_champ3id', 't2_champ3_sum1', 
-'t2_champ3_sum2', 't2_champ4id', 't2_champ4_sum1', 't2_champ4_sum2', 't2_champ5id', 't2_champ5_sum1', 't2_champ5_sum2',
-'t2_ban1', 't2_ban2', 't2_ban3', 't2_ban4', 't2_ban5'
+t1_champ1id, t1_champ1_sum1, t1_champ1_sum2, t1_champ2id, t1_champ2_sum1, t1_champ2_sum2, t1_champ3id, t1_champ3_sum1, 
+t1_champ3_sum2, t1_champ4id, t1_champ4_sum1, t1_champ4_sum2, t1_champ5id, t1_champ5_sum1, t1_champ5_sum2, 
+t1_ban1, t1_ban2, t1_ban3, t1_ban4, t1_ban5, 
+t2_champ1id, t2_champ1_sum1, t2_champ1_sum2, t2_champ2id, t2_champ2_sum1, t2_champ2_sum2, t2_champ3id, t2_champ3_sum1, 
+t2_champ3_sum2, t2_champ4id, t2_champ4_sum1, t2_champ4_sum2, t2_champ5id, t2_champ5_sum1, t2_champ5_sum2,
+t2_ban1, t2_ban2, t2_ban3, t2_ban4, t2_ban5
+
+(new added) firstBlood, firstTower, firstDragon, firstRiftHerald
+
+### mid-game model:
+
+t1_champ1id, t1_champ1_sum1, t1_champ1_sum2, t1_champ2id, t1_champ2_sum1, t1_champ2_sum2, t1_champ3id, t1_champ3_sum1, 
+t1_champ3_sum2, t1_champ4id, t1_champ4_sum1, t1_champ4_sum2, t1_champ5id, t1_champ5_sum1, t1_champ5_sum2, 
+t1_ban1, t1_ban2, t1_ban3, t1_ban4, t1_ban5, 
+t2_champ1id, t2_champ1_sum1, t2_champ1_sum2, t2_champ2id, t2_champ2_sum1, t2_champ2_sum2, t2_champ3id, t2_champ3_sum1, 
+t2_champ3_sum2, t2_champ4id, t2_champ4_sum1, t2_champ4_sum2, t2_champ5id, t2_champ5_sum1, t2_champ5_sum2,
+t2_ban1, t2_ban2, t2_ban3, t2_ban4, t2_ban5
+firstBlood, firstTower, firstDragon, firstRiftHerald
+
+(new added) firstInhibitor, firstBaron, t1_towerKills, t1_dragonKills, t1_riftHeraldKills, t2_towerKills, t2_dragonKills, t2_riftHeraldKills
+
+### post-game model:
+
+t1_champ1id, t1_champ1_sum1, t1_champ1_sum2, t1_champ2id, t1_champ2_sum1, t1_champ2_sum2, t1_champ3id, t1_champ3_sum1, 
+t1_champ3_sum2, t1_champ4id, t1_champ4_sum1, t1_champ4_sum2, t1_champ5id, t1_champ5_sum1, t1_champ5_sum2, 
+t1_ban1, t1_ban2, t1_ban3, t1_ban4, t1_ban5, 
+t2_champ1id, t2_champ1_sum1, t2_champ1_sum2, t2_champ2id, t2_champ2_sum1, t2_champ2_sum2, t2_champ3id, t2_champ3_sum1, 
+t2_champ3_sum2, t2_champ4id, t2_champ4_sum1, t2_champ4_sum2, t2_champ5id, t2_champ5_sum1, t2_champ5_sum2,
+t2_ban1, t2_ban2, t2_ban3, t2_ban4, t2_ban5
+firstBlood, firstTower, firstDragon, firstRiftHerald, firstInhibitor, firstBaron, 
+t1_towerKills, t1_dragonKills, t1_riftHeraldKills, 
+t2_towerKills, t2_dragonKills, t2_riftHeraldKills
+
+(new added) t1_inhibitorKills, t1_baronKills, t2_inhibitorKills, t2_baronKills
+
+If the input csv file does not include all columns corresponding to the executed model, an error message will be printed and the 
+program will be terminated. 
+
+This project uses Python to implement the user interaction program and jupyter notebook to train classification models. 
