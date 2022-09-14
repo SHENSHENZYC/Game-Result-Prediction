@@ -17,7 +17,7 @@ and/or first rift herald has been taken, usually around 10 minutes of the game.
 - mid-game: refers to when first baron and/or first inhibitor has been taken, 
 usually around 25 minutes of the game. 
 
-- post-game: after the game has ended. 
+- late-game: generally refers to after 40 minutes of the game (if the game lasts more than 40 minutes).
 
 As the game reaches the next stage, the user could switch to the model associated to that stage that analyzes more information 
 from the game and provides more accurate prediction results. 
@@ -63,7 +63,7 @@ firstBlood, firstTower, firstDragon, firstRiftHerald
 
 (new added) firstInhibitor, firstBaron, t1_towerKills, t1_dragonKills, t1_riftHeraldKills, t2_towerKills, t2_dragonKills, t2_riftHeraldKills
 
-### post-game model:
+### late-game model:
 
 t1_champ1id, t1_champ1_sum1, t1_champ1_sum2, t1_champ2id, t1_champ2_sum1, t1_champ2_sum2, t1_champ3id, t1_champ3_sum1, 
 t1_champ3_sum2, t1_champ4id, t1_champ4_sum1, t1_champ4_sum2, t1_champ5id, t1_champ5_sum1, t1_champ5_sum2, 
