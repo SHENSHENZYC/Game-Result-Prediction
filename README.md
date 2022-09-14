@@ -29,4 +29,13 @@ predictor_input.py is a program that is able to take standard system inputs and 
 
 predictor_csv.py is a program that takes a csv file as input, which is able to produce as many predictions as the number of games
 included in the input file.
-Please note that 
+Please note that there are required columns for the model at each stage. The list of required columns are as follows:
+
+### pre-game model:
+
+'t1_champ1id', 't1_champ1_sum1', 't1_champ1_sum2', 't1_champ2id', 't1_champ2_sum1', 't1_champ2_sum2', 't1_champ3id', 't1_champ3_sum1', 
+'t1_champ3_sum2', 't1_champ4id', 't1_champ4_sum1', 't1_champ4_sum2', 't1_champ5id', 't1_champ5_sum1', 't1_champ5_sum2', 
+'t1_ban1', 't1_ban2', 't1_ban3', 't1_ban4', 't1_ban5', 
+'t2_champ1id', 't2_champ1_sum1', 't2_champ1_sum2', 't2_champ2id', 't2_champ2_sum1', 't2_champ2_sum2', 't2_champ3id', 't2_champ3_sum1', 
+'t2_champ3_sum2', 't2_champ4id', 't2_champ4_sum1', 't2_champ4_sum2', 't2_champ5id', 't2_champ5_sum1', 't2_champ5_sum2',
+'t2_ban1', 't2_ban2', 't2_ban3', 't2_ban4', 't2_ban5'
