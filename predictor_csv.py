@@ -20,7 +20,8 @@ and/or first rift herald has been taken, usually around 10 minutes of the game.
 - mid-game: refers to when first baron and/or first inhibitor has been taken, 
 usually around 25 minutes of the game. 
 
-- post-game: after the game has ended. 
+- late-game: generally refers to after 40 minutes of the game (if the game 
+lasts more than 40 minutes).
 '''
 
 
@@ -156,9 +157,9 @@ def mid_game_predictor(test_data):
     return model.predict_proba(data)
 
 
-def post_game_predictor(test_data):
+def late_game_predictor(test_data):
     '''
-    Uses post-game classification model to predict game result.
+    Uses late-game classification model to predict game result.
     '''
     
     test_columns = set(test_data.columns)
@@ -226,8 +227,8 @@ def main():
     # input game status, i.e. choose predictor
     while True:
         game_status = input('Enter game status. Options are pre-game, ' + 
-                            'early-game, mid-game, post-game.\ngame status: ').strip().lower()
-        if game_status not in {'pre-game', 'early-game', 'mid-game', 'post-game'}:
+                            'early-game, mid-game, late-game.\ngame status: ').strip().lower()
+        if game_status not in {'pre-game', 'early-game', 'mid-game', 'late-game'}:
             print('Invalid input. Please try again.')
         else:
             break
@@ -239,7 +240,7 @@ def main():
     elif game_status == 'mid-game':
         win_prob = mid_game_predictor(test_data)
     else:
-        win_prob = post_game_predictor(test_data)
+        win_prob = late_game_predictor(test_data)
         
     print('')
     print('------------------')
