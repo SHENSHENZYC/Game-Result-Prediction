@@ -77,7 +77,8 @@ t2_towerKills, t2_dragonKills, t2_riftHeraldKills
 
 (new added) t1_inhibitorKills, t1_baronKills, t2_inhibitorKills, t2_baronKills
 
-If the input csv file does not include all columns corresponding to the executed model, an error message will be printed and the 
-program will be terminated. 
+Feel free to check out `t.csv` under `data` folder as an example template for an intended input csv file. It specifies what 
+columns and column names should be included to successfully run the program. If the input csv file does not include all 
+columns corresponding to the executed model, an error message will be printed and the program will be terminated. 
 
 This project uses Python to implement the user interaction program and jupyter notebook to train classification models. 
